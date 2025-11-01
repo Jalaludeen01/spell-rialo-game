@@ -91,9 +91,10 @@ function endGame(result) {
   if (result === "win") {
     endMessage.textContent = `You Win! You have successfully spelt RIALO!`;
   } else {
-    endMessage.textContent = `Game Over. Rethink, Rebuild.`;
+    endMessage.textContent = `Game Over. Rethink, Rebuild. The word was: ${secretWord}`;
   }
 }
+
 
 restartBtn.addEventListener("click", () => {
   endScreen.classList.add("hidden");
