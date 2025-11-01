@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rialo Word Game</title>
+  <link rel="stylesheet" href="rialo.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="images/rialo-logo 2.svg" alt="Rialo Logo" class="rialo-logo">
+      <h1>RIALO WORD QUEST</h1>
+      <p id="rialo-progress">_ _ _ _ _</p>
+    </div>
+
+
+    <div id="game" class="game hidden">
+      <div id="status">
+        <p id="lives"></p>
+      </div>
+
+      <div id="word-container"></div>
+
+      <input type="text" id="guess-input" maxlength="1" placeholder="Enter a letter">
+      <button id="guess-btn">Guess</button>
+    </div>
+
+    <div id="menu" class="menu">
+      <h2>Select Difficulty</h2>
+      <button class="difficulty" data-level="easy">Easy</button>
+      <button class="difficulty" data-level="medium">Medium</button>
+      <button class="difficulty" data-level="hard">Hard</button>
+    </div>
+
+    <div id="end-screen" class="overlay hidden">
+      <div class="overlay-card">
+        <h2 id="end-message"></h2>
+        <button id="restart-btn">Rialo</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="rialo.js"></script>
+</body>
+</html>
